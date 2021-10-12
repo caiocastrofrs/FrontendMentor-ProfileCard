@@ -1,0 +1,13 @@
+@media (min-width:$desktop-viewport) {
+    .bg-pattern__top {
+        top: -50rem;
+    }
+
+    .bg-pattern__bottom {
+        top: 50rem;
+        left: 100rem;
+    }
+    .card {
+        margin: 25rem auto;
+    }
+}

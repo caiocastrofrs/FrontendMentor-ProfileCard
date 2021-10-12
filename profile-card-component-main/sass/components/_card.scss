@@ -1,0 +1,59 @@
+.card {
+    width: 33rem;
+    border-radius: 1.5rem;
+    margin: 15rem auto;
+    overflow: hidden;
+    position: relative;
+    background-color: $color-white;
+
+    &__profile-pic-container {
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 6px solid $color-white;
+        top: 22%;
+        left: 33%;
+        &__pic {
+            border-radius: 50%;
+        }
+    }
+
+    &__person-info {
+        text-align: center;
+        padding: 7rem 0 4rem;
+        &__name {
+            margin: 0 auto;
+            width: 15rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: $color-dark-blue;
+        }
+
+        &__age {
+            margin-left: 1rem;
+            font-weight: 300;
+            color: $color-grey-blue;
+        }
+        
+        &__place {
+            width:.1rem;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            font-weight: 300;
+            color: $color-dark-grey;
+        }
+    }
+
+    &__account-info {
+        justify-content: space-around;
+        margin-bottom: 2.5rem;
+        display: flex;
+        gap: 1rem;
+        &__followers,
+        &__likes,
+        &__photos {
+            text-align: center;
+        }
+    }
+
+}

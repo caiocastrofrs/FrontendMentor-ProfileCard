@@ -1,0 +1,133 @@
+.bg-pattern {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.bg-pattern__top {
+  top: -14rem;
+  left: -20rem;
+}
+
+.bg-pattern__bottom {
+  left: 18rem;
+  top: 40rem;
+}
+
+.bg-pattern__top, .bg-pattern__bottom {
+  max-width: 100%;
+  position: absolute;
+  opacity: .7;
+}
+
+.card {
+  width: 33rem;
+  border-radius: 1.5rem;
+  margin: 15rem auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+
+.card__profile-pic-container {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #fff;
+  top: 22%;
+  left: 33%;
+}
+
+.card__profile-pic-container__pic {
+  border-radius: 50%;
+}
+
+.card__person-info {
+  text-align: center;
+  padding: 7rem 0 4rem;
+}
+
+.card__person-info__name {
+  margin: 0 auto;
+  width: 15rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.card__person-info__age {
+  margin-left: 1rem;
+  font-weight: 300;
+  color: #6a6f81;
+}
+
+.card__person-info__place {
+  width: .1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  color: #969696;
+}
+
+.card__account-info {
+  justify-content: space-around;
+  margin-bottom: 2.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.card__account-info__followers, .card__account-info__likes, .card__account-info__photos {
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #19a2ae;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.heading-secondary {
+  color: #2d3248;
+  font-size: 1.8rem;
+}
+
+.label {
+  color: #969696;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 1440px) {
+  .bg-pattern__top {
+    top: -50rem;
+  }
+  .bg-pattern__bottom {
+    top: 50rem;
+    left: 100rem;
+  }
+  .card {
+    margin: 25rem auto;
+  }
+}
